@@ -1,22 +1,30 @@
 name: aquaguard_smart_water_level_monitoring_system_app
-description: "A new Flutter project."
+description: "A Flutter application for monitoring water levels via ESP32 BLE"
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.6.1
+  sdk: '>=3.2.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
+  cupertino_icons: ^1.0.2
+  # BLE communication
+  flutter_blue_plus: ^1.14.1
+  # JSON utilities
+  json_annotation: ^4.8.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^2.0.0
+  # For JSON serialization
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
 
 flutter:
   uses-material-design: true
   assets:
-    - lib/assets/images/logo.png
+    - lib/assets/images/
